@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine la Fleur contact form</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="contact.css">
+     <!-- fontawesom -->
+     <script src="https://kit.fontawesome.com/22561a8cef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="titleAll">
+                <div class="title">
+                    <h1>La Fleur</h1>
+                    <h3>pour une occasion</h3>
+                </div>
+            
+                <!-- search button -->
+                <div id="searchsection">
+                    <form action="#" method="get">
+                        <input type="search" name="search" placeholder="keyword" id="placeholder">
+                        <input type="submit" name="submit" value="Search" id="button1">
+                    </form>
+                </div>    
+            </div> <!--   end of titleAll -->
+            
+            
+            <nav>               
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="article.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sources.html">Sources</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <main>
+            <div class="background">
+                <div class="whitebackout">   
+                    <div class="whiteback">
+                        <h2>Contact us</h2>
+                        <h3>- from you to us -</h3>
+
+                        <!-- Fname/ Lname /email /phone /discribe articles magazine(radio button)/ message/ submit   -->
+
+                        <form action="https://formspree.io/f/xdoblvrw" method="post" >
+                            <div class="boxes">
+                                <div class="field">
+                                    <div class="name1">
+                                        <label id="Fname">First Name</label>
+                                        <input type="text" id="FirstName" class="box" required  />
+                                    </div>
+                                    
+                                    <div class="name2">
+                                        <label id="Lname">Last Name</label>
+                                        <input type="text" id="LastName" class="box" required  />
+                                    </div>
+                                    
+                                    <div class="mail">
+                                        <label id="email">Email Adress</label>
+                                        <input type="email" id="emailadd" pattern="+@" class="box" required placeholder="lafleur@example.com"  />
+                                    </div>
+                                    
+                                    <div class="tel">
+                                        <label id="tel">Phone Number</label>
+                                        <input type="text" id="phoneNumber" class="box">
+                                    </div>
+                                </div><!--  end of div field -->
+                            
+                                <fieldset>
+                                    Whould you like to Subscribe articles?
+                                    <label>
+                                        <input type="radio" name="subbutton" value="Yes, I would love to.">
+                                        Yes, I would love to.
+                                    </label>
+                                
+                                    <label>    
+                                        <input type="radio" name="subbutton" value="No,thnak you.">
+                                        No, thank you.
+                                    </label>
+                                </fieldset>
+                            
+                            
+                                <label>
+                                    Message
+                                    <textarea name="comment" id="message" cols="30" rows="10" >Please hear your voice.</textarea>
+                                </label>
+
+                                <input type="submit" value="Submit" id="button">
+                            </div><!--  end of div boxes -->
+                        </form>
+                    </div><!-- end of div white background  inside -->
+                </div><!--  end of white background outside  -->
+            </div><!--  end of div background -->
+        </main>
+        
+        
+        <footer>
+            <h3>follow me</h3>  
+            <ul>
+                <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"><i aria-hidden="true" title="instagram"></i></i></a></li>
+                <li><a href="http://facebook.com"><i class="fa-brands fa-facebook-f"><i aria-hidden="true" title="facebook"></i></i></a></li>
+                <li><a href="http://twitter.com"><i class="fa-brands fa-twitter"><i aria-hidden="true" title="twitter"></i></i></a></li>
+            </ul>
+            <p>&copy;KEIKO SHIMIZU.2022.All Rights Reserved.</p>
+        </footer>
+    </div><!--  end of div wrapper -->
+</body>
+</html>
